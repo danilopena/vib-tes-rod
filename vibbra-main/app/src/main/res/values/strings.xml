@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Vibbra</string>
+
+    <string name="sign_in_screen_action">Login</string>
+    <string name="sign_in_screen_login_hint">Login</string>
+    <string name="sign_in_screen_password_hint">Password</string>
+    <string name="sign_in_screen_or_label">Or</string>
+    <string name="sign_in_screen_sso_action">Login with SSO</string>
+    <string name="sign_in_screen_login_error">Invalid login</string>
+    <string name="sign_in_screen_password_error">Invalid password</string>
+    <string name="sign_in_screen_error">There was a problem, try again!</string>
+
+    <string name="dashboard_screen_menu_new_deal">Create Deal</string>
+    <string name="dashboard_screen_menu_my_deals">My Deals</string>
+    <string name="dashboard_screen_menu_my_invites">My Invites</string>
+
+</resources>

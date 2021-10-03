@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="malibu">8dp</dimen>
+    <dimen name="cotton_candy">16dp</dimen>
+    <dimen name="tradewind">24dp</dimen>
+    <dimen name="ceriseRed">32dp</dimen>
+    <dimen name="citron">40dp</dimen>
+    <dimen name="jelly_bean">48dp</dimen>
+    <dimen name="mango_tango">56dp</dimen>
+    <dimen name="violet_eggplant">64dp</dimen>
+    <dimen name="purple_hearth">72dp</dimen>
+
+    <dimen name="button_height">55dp</dimen>
+    <dimen name="text_button_height">32dp</dimen>
+
+</resources>

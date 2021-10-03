@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdk Versions.compileSdk
+
+    defaultConfig {
+        applicationId ApplicationId.id
+        minSdk Versions.minSdk
+        targetSdk Versions.targetSdk
+        versionCode Releases.versionCode
+        versionName Releases.versionName
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            ext.alwaysUpdateBuildId = false
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += 'src/main/kotlin'
+        }
+        test {
+            java.srcDirs += 'src/test/kotlin'
+        }
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation Kotlin.core
+
+    implementation AndroidX.ktx
+    implementation AndroidX.fragment
+    implementation AndroidX.appcompat
+    implementation AndroidX.constraint
+    implementation AndroidX.design
+
+    implementation AndroidX.servicesLocation
+
+    implementation Retrofit.core
+    implementation Moshi.coreKotlin
+    implementation Retrofit.interceptor
+    implementation Retrofit.moshiConverter
+
+    implementation ImageLoader.coil
+
+    implementation Navigation.navigationFragment
+    implementation Navigation.navigationUi
+
+    implementation Lifecycle.common
+    implementation Lifecycle.liveData
+    implementation Lifecycle.viewModel
+
+    implementation Hilt.core
+
+    kapt Hilt.compiler
+    kapt Moshi.codeGen
+}
